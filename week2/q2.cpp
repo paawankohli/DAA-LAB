@@ -18,7 +18,6 @@ int main()
 {
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
-	
 	int sieve[10001];
 
 	for (int i = 0; i < 10001; i++)
