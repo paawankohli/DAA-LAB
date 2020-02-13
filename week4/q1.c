@@ -2,9 +2,7 @@
 
 int n;
 int r1;
-int f;
 int combinations[1000][10];
-int opcount = 0;
 
 int fact(int n)
 {
@@ -42,6 +40,8 @@ void permute(int numbers[], int l, int r)
 
 int main()
 {
+	int opcount = 0;
+
 	printf("Enter n:");
 	scanf("%d", &n);
 
