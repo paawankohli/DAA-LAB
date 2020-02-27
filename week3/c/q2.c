@@ -9,7 +9,7 @@ int isPresent(char str[], char sub[])
 	printf("m: %d n: %d\n", m, n);
 	int opcount = 0, flag;
 
-	for (int i = 0 ; i < m - n + 1 ; i++)
+	for (int i = 0 ; i < m - n ; i++)
 	{
 		int j;
 		flag = 0;

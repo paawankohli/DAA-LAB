@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
-
 int power(int a, int b)
 {
 	int ans = 1;
@@ -18,6 +15,7 @@ int main()
 {
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
+
 	int sieve[10001];
 
 	for (int i = 0; i < 10001; i++)
@@ -32,7 +30,7 @@ int main()
 		{
 			count ++;
 
-			for (int j = i * i; j < 10001; j += i)
+			for (int j = i * i; j < 10001; j = j + i)
 				sieve[j] = 1;
 		}
 
@@ -50,9 +48,8 @@ int main()
 	int a[count];
 	int b[count];
 
-
-
 	int test = 44;
+
 	while (test--)
 	{
 		int opcount = 0;

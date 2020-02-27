@@ -10,10 +10,9 @@ freopen("output.txt", "w", stdout);
 
 int GCD(int a , int b)
 {
-	int c;
 	int opcount = 0;
 
-	c = min(a, b);
+	int c = min(a, b);
 
 	while (1)
 	{
@@ -25,7 +24,7 @@ int GCD(int a , int b)
 			return c;
 		}
 
-		c -= 1;
+		c--;
 	}
 
 }

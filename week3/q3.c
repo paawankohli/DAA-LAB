@@ -26,11 +26,11 @@ int main()
 
 		for (int k = 0; k < n; k++)
 		{
-			if (j % 2)
+			if (j & 1)
 				csum += arr[ind];
 
 			ind++;
-			j = j / 2;  //else shift left
+			j = j >> 1;  //else shift left
 		}
 
 		if (csum == sum)
@@ -42,11 +42,11 @@ int main()
 
 			for (int k = 0; k < n; k++)
 			{
-				if (j % 2)
+				if (j & 1)
 					printf("%d ", arr[ind]);
 
 				ind++;
-				j = j /2 ;  //else shift left
+				j = j >> 1;  //else shift left
 			}
 
 			printf("\n");
@@ -61,7 +61,7 @@ int main()
 					printf("%d ", arr[ind]);
 
 				ind++;
-				j = j / 2;
+				j = j >> 1;  //else shift left
 			}
 
 			printf("\n");
