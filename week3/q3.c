@@ -70,6 +70,8 @@ int main()
 		}
 	}
 
+
+
 	if (!flag)
 		printf("No such subset possible\n");
 
