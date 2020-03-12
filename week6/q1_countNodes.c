@@ -10,20 +10,17 @@ typedef struct node {
 	nodeptr left, right;
 } node;
 
-nodeptr newNode(int data)
-{
+nodeptr newNode(int data) {
 	nodeptr temp = (nodeptr) malloc(sizeof(node));
 	temp -> data = data;
 	temp -> left = NULL;
 	temp -> right = NULL;
-
 	return temp;
 }
 
 void insertTree(nodeptr *root, int data)
 {
-	if (*root == NULL)
-	{
+	if (*root == NULL) {
 		*root = newNode(data);
 		return;
 	}
